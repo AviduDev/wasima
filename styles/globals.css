@@ -24,3 +24,17 @@ a {
     background: black;
   }
 }
+
+button {
+  background-color: #FFC700;
+  border: none;
+  border-radius: 500px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+::selection {
+  color: black;
+  background: rgba(117, 182, 255, 0.5);
+}

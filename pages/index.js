@@ -67,8 +67,112 @@ export default function Home() {
           </div>
         </div>
         {/* Top Selling Items */}
+        <div className={styles.product_grid}>
+          <div className={styles.product_item}>
+            <div className={styles.product_image_container}>
+              <img className={styles.product_image} src="product1.jpg" alt="" />
+              <p className={styles.tag}>NEW</p>
+              <button className={styles.addtocart}>ADD TO CART</button>
+            </div>
+            <h3 className={styles.product_name}>Product Name</h3>
+            <p className={styles.product_price}>1620 LKR</p>
+          </div>
+
+          <div className={styles.product_item}>
+            <div className={styles.product_image_container}>
+              <img className={styles.product_image} src="product2.jpg" alt="" />
+              <p className={styles.tag}>NEW</p>
+              <button className={styles.addtocart}>ADD TO CART</button>
+            </div>
+            <h3 className={styles.product_name}>Product Name</h3>
+            <p className={styles.product_price}>1620 LKR</p>
+          </div>
+
+          <div className={styles.product_item}>
+            <div className={styles.product_image_container}>
+              <img className={styles.product_image} src="product3.jpg" alt="" />
+              <p className={styles.tag}>NEW</p>
+              <button className={styles.addtocart}>ADD TO CART</button>
+            </div>
+            <h3 className={styles.product_name}>Product Name</h3>
+            <p className={styles.product_price}>1620 LKR</p>
+          </div>
+
+          <div className={styles.product_item}>
+            <div className={styles.product_image_container}>
+              <img className={styles.product_image} src="product4.jpg" alt="" />
+              <p className={styles.tag}>NEW</p>
+              <button className={styles.addtocart}>ADD TO CART</button>
+            </div>
+            <h3 className={styles.product_name}>Product Name</h3>
+            <p className={styles.product_price}>1620 LKR</p>
+          </div>
+        </div>
         {/* Promotion Banner */}
+        <div className={styles.promotion_banner}>
+          <div className={styles.promition_image_container}>
+            <img
+              className={styles.promition_image_container}
+              src="unisex.jpg"
+              alt=""
+            />
+          </div>
+          <div className={styles.promition_right}>
+            <h2 className={styles.promotion_text}>
+              black friday sales upto
+              <span className={styles.promo_highlight}> 30% off</span>
+            </h2>
+            <Link className={styles.promotion_link} href="/">
+              <button>grab the deal</button>
+            </Link>
+          </div>
+        </div>
         {/* Why Us */}
+        <div className={styles.why}>
+          <div className={styles.why_container}>
+            <div className={styles.why_logo}>
+              <img width={200} src="quality.svg" alt="" />
+            </div>
+            <div className={styles.why_details}>
+              <h3 className={styles.why_title}>Quality Products</h3>
+              <p className={styles.why_text}>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque blanditiis corporis voluptas vero illum. Eius quas
+                voluptatem reiciendis maxime expedita?
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.why_container}>
+            <div className={styles.why_logo}>
+              <img width={200} src="fair.svg" alt="" />
+            </div>
+            <div className={styles.why_details}>
+              <h3 className={styles.why_title}>Fair Price</h3>
+              <p className={styles.why_text}>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque blanditiis corporis voluptas vero illum. Eius quas
+                voluptatem reiciendis maxime expedita?
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.why_container}>
+            <div className={styles.why_logo}>
+              <img width={200} src="fast.svg" alt="" />
+            </div>
+
+            <div className={styles.why_details}>
+              <h3 className={styles.why_title}>Fast Delivery</h3>
+              <p className={styles.why_text}>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque blanditiis corporis voluptas vero illum. Eius quas
+                voluptatem reiciendis maxime expedita?
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* FAQs */}
       </main>
 
