@@ -1,40 +1,28 @@
-import { useEffect } from "react";
-import L from "leaflet";
-import * as ReactLeaflet from "react-leaflet";
-import "leaflet/dist/leaflet.css";
+import { useState, useEffect } from 'react';
+import 'leaflet/dist/leaflet.css';
+import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
 
-import styles from "../styles/Map.module.css";
+export function ChangeView({ coords }) {
+  const map = useMap();
+  map.setView(coords, 12);
+  return null;
+}
 
-import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
-import iconUrl from "leaflet/dist/images/marker-icon.png";
-import shadowUrl from "leaflet/dist/images/marker-shadow.png";
+export default function Map() {
+  const [geoData, setGeoData] = useState({ lat: 64.536634, lng: 16.779852 });
 
-const { MapContainer } = ReactLeaflet;
-
-const Map = ({ children, className, ...rest }) => {
-  let mapClassName = styles.map;
-
-  if (className) {
-    mapClassName = `${mapClassName} ${className}`;
-  }
-
-  useEffect(() => {
-    (async function init() {
-      delete L.Icon.Default.prototype._getIconUrl;
-
-      L.Icon.Default.mergeOptions({
-        iconRetinaUrl: iconRetinaUrl.src,
-        iconUrl: iconUrl.src,
-        shadowUrl: shadowUrl.src,
-      });
-    })();
-  }, []);
+  const center = [geoData.lat, geoData.lng];
 
   return (
-    <MapContainer className={mapClassName} {...rest}>
-      {children(ReactLeaflet)}
+    <MapContainer center={center} zoom={12} style={{ height: '100vh' }}>
+      <TileLayer
+        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      {geoData.lat && geoData.lng && (
+        <Marker position={[geoData.lat, geoData.lng]} />
+      )}
+      <ChangeView coords={center} />
     </MapContainer>
   );
-};
-
-export default Map;
+}
