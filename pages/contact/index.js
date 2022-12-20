@@ -54,20 +54,96 @@ export default function Contact() {
           </form>
           <div className={styles.contactDetails}>
             <address>Colombo 10</address>
-            <a href="tel:+94767578127">+9476 75 78 127</a>
+            <a href="tel:+94 77 890 2812">+94 77 890 2812</a>
             <br />
-            <a href="mailto:avidu97@gmail.com">avidu97@gmail.com</a>
+            <a href="mailto:www.motivatedclothing.lk@gmail.com">
+              www.motivatedclothing.lk@gmail.com
+            </a>
             <div className={styles.socialMedia}>
-              <Link className={styles.socialIcon} href="https://www.facebook.com/">
+              <Link
+                className={styles.socialIcon}
+                href="https://www.facebook.com/"
+              >
                 <img src="facebook.svg" alt="" />
               </Link>
-              <Link className={styles.socialIcon} href="https://www.facebook.com/">
+              <Link
+                className={styles.socialIcon}
+                href="https://www.facebook.com/"
+              >
                 <img src="instagram.svg" alt="" />
               </Link>
-              <Link className={styles.socialIcon} href="https://www.facebook.com/">
+              <Link
+                className={styles.socialIcon}
+                href="https://www.facebook.com/"
+              >
                 <img src="linkedin.svg" alt="" />
               </Link>
             </div>
+          </div>
+        </div>
+        <div className={styles.faqsContainer}>
+          <div className={styles.faq}>
+            <div className={styles.question}>
+              How much is the t-shirt printing?
+            </div>
+            <div className={styles.answer}>
+              When calculating your T-shirt printing cost, factoring in quantity
+              is key. If you're purchasing a small number, you can expect to pay
+              retail prices – think $20-$30 per shirt. Now, this price point may
+              be just fine if you're looking to make a T-shirt for yourself.
+            </div>
+          </div>
+          <div className={styles.faq}>
+            <div className={styles.question}>
+              What is the best printing method on a t-shirt?
+            </div>
+            <div className={styles.answer}>
+              Digital Transfer Printing – The Best Print Method for Sportswear
+              or Synthetic Fabrics. Digital transfer printing combines the bold
+              colours of screen printing with the ability to print onto almost
+              any material. Screen Printing and DTG produce high-quality prints
+              however, they work best on high percentage cotton garments ...
+            </div>
+          </div>
+          <div className={styles.faq}>
+            <h2>Frequently Asked Questions</h2>
+            <div className={styles.question}>
+              What makes a Tshirt high quality?
+            </div>
+            <div className={styles.answer}>
+              What are High Quality T-shirts Made Of? High quality T-shirts
+              start with 100% high quality, pre-shrunk cotton. That means no
+              itchy synthetic fibers, and no shrinking or shape-changing after
+              your T-shirt has gone through the wash.
+            </div>
+          </div>
+          <div className={styles.faq}>
+            <div className={styles.question}>
+              Is selling T-shirts still profitable?
+            </div>
+            <div className={styles.answer}>
+              Is the T-Shirt Business Profitable? The T-shirt business is
+              lucrative because the industry continues to grow in value. The
+              global custom T-shirt printing market was valued at $3.64 billion
+              in 2020. The same study expects it to maintain a compound annual
+              growth rate of 9.7% from 2021 to 2028.
+            </div>
+          </div>
+          <div className={styles.faq}>
+            <div className={styles.question}>
+              Can I use any printer for Tshirt printing?
+            </div>
+            <div className={styles.answer}>
+              Any ink and any inkjet printer will allow you to transfer a
+              personalized image onto a shirt, at home, using equipment you
+              probably have already. It is as simple as that!
+            </div>
+          </div>
+          <div className={styles.faq}>
+            <div className={styles.question}>
+              What type of T-shirt is most popular?
+            </div>
+            <div className={styles.answer}>The Crew Neck style</div>
           </div>
         </div>
         <div>
